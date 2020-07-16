@@ -74,51 +74,88 @@
 // }
 // console.log()
 
-function sonic(superPowerOne, superPowerTwo){
-    let allSuperPowers = superPowerOne() + ' and ' + superPowerTwo();
+// function sonic(superPowerOne, superPowerTwo){
+//     let allSuperPowers = superPowerOne() + ' and ' + superPowerTwo();
 
-    return allSuperPowers;
+//     return allSuperPowers;
 
-}
+// }
 
-function superSpeed() {
-    let power = 'I can run 100 mph';
+// function superSpeed() {
+//     let power = 'I can run 100 mph';
 
-    return power;
-}
+//     return power;
+// }
 
-function superSpin(){
-    let spin = 'I can spin 1000 mph';
+// function superSpin(){
+//     let spin = 'I can spin 1000 mph';
 
-    return spin;
+//     return spin;
 
-}
+// }
 
-console.log(sonic(superSpeed, superSpin));
+// console.log(sonic(superSpeed, superSpin));
 
-function blastOff() {
-    let num = 0;
+// function blastOff() {
+//     let num = 0;
 
-    for (let i = 10; i >= num; i--){
-        console.log(i); // 10, 9, 8, 7, ....
+//     for (let i = 10; i >= num; i--){
+//         console.log(i); // 10, 9, 8, 7, ....
+//     }
+//     console.log('BLAST OF!!!!')
+// }
+
+// setTimeout(blastOff, 5000);
+
+// // make a function that prints your name
+// // setTimeout and pass in function and a time (5000)
+
+// function steven(){
+//     console.log('Steven')
+// }
+// setTimeout(steven, 5000);
+
+// // setTimeout
+
+// let myNameTwo = 'Steven';
+// setTimeout(function(){
+//     printName{myNameTwo};
+
+// }, 5000);
+
+
+// Iterators
+// forEach
+
+// const collectables = ['Bomag', 'CMI Corp', 'Wirtgen','Catepillar'];
+
+// collectables.forEach(function(element) {
+//     console.log(element);
+// });
+
+// collectables.forEach(element => {
+//     if(element.length > 6) {
+//     console.log(element);
+// }
+    
+// });
+
+// map
+const someNumbers = [24, 65, 347, 34];
+
+const addFive = someNumbers.map(element =>{
+    return element + 5;
+});
+
+console.log(addFive);
+
+// filter
+const filteredNumbers = someNumbers.filter(element =>{
+    if (element > 50) {
+        return element;
     }
-    console.log('BLAST OF!!!!')
-}
+});
 
-setTimeout(blastOff, 5000);
+console.log(filteredNumbers);
 
-// make a function that prints your name
-// setTimeout and pass in function and a time (5000)
-
-function steven(){
-    console.log('Steven')
-}
-setTimeout(steven, 5000);
-
-// setTimeout
-
-let myNameTwo = 'Steven';
-setTimeout(function(){
-    printName{myNameTwo};
-
-}, 5000);
+// [65, 347]
