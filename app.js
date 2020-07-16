@@ -111,6 +111,14 @@ setTimeout(blastOff, 5000);
 // setTimeout and pass in function and a time (5000)
 
 function steven(){
-    console.group('Steven')
+    console.log('Steven')
 }
 setTimeout(steven, 5000);
+
+// setTimeout
+
+let myNameTwo = 'Steven';
+setTimeout(function(){
+    printName{myNameTwo};
+
+}, 5000);
