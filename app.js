@@ -45,23 +45,53 @@
 
 
 
-function calculator(num1, num2, callbackOne, callbackTwo)
+// function calculator(num1, num2, callbackOne, callbackTwo){
 
-    Let result = callbackOne(num1,num2) + callbackTwo(num1,num2);
+//     let result = callbackOne(num1,num2) + callbackTwo(num1,num2);
 
-    return result;
+//     return result;
+// }
+
+// function addNumbers(num1, num2) {
+
+//     let result = num1 + num2;
+
+//     return result;
+
+// }
+// function subractNumbers(num1, num2){
+
+
+// }
+
+// console.log(calculator(5,77, addNumbers, subtractNumbers));
+
+
+// function spiderMan ( web, climb, callbackOne, callbackTwo){
+//     let result = web + climb;
+
+//     return result:
+// }
+// console.log()
+
+function sonic(superPowerOne, superPowerTwo){
+    let allSuperPowers = superPowerOne() + ' and ' + superPowerTwo();
+
+    return allSuperPowers;
+
 }
 
-function addNumbers(num1, num2) {
+function superSpeed() {
+    let power = 'I can run 100 mph';
 
-    let result = num1 + num2;
-
-    return result;
-
-}
-function subractNumber(num1, num2){
-    
-
+    return power;
 }
 
-console.log(calculator(5,77, addNumbers, subtractNumbers));
+function superSpin(){
+    let spin = 'I can spin 1000 mph';
+
+    return spin;
+
+}
+
+console.log(sonic(superSpeed, superSpin));
